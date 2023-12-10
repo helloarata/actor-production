@@ -57,8 +57,9 @@ const biz_udp_mincho = BIZ_UDPMincho({
   display: 'swap',
 });
 
-const fonts = [notojp, vollkorn, shippori_mincho, zen_antique, kiwi_maru, zen_old_mincho, yuji_boku, biz_udp_mincho];
+
 export default function RootLayout({column}) {
+  const fonts = [notojp, vollkorn, shippori_mincho, zen_antique, kiwi_maru, zen_old_mincho, yuji_boku, biz_udp_mincho];
   return (
     <Layout title='Top' fonts={fonts}>
       <MV fonts={fonts}/>

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Column({ column, fonts })  {
   return (
-    <section id='column' className={`${styles.column} ${fonts[0].className}`}>
+    <section id='column' className={`${styles.column} ${fonts && fonts[0].className}`}>
       <div className={styles.column__headline}>
-        <h2 className={`${styles.column__headline__title} ${fonts[1].className}`}>Column</h2>
+        <h2 className={`${styles.column__headline__title} ${fonts && fonts[1].className}`}>Column</h2>
       </div>
 
       <div className={styles.column__body}>
@@ -15,7 +15,7 @@ export default function Column({ column, fonts })  {
 
         <div className={styles.column__content}>
           <div className={styles.column__content__container}>
-            {column.map((column) => (
+            {column && column.map((column) => (
               <article key={column.id} className={styles.column__container}>
                 <Link href={`/column/${column.id}`}>
                   <div className={styles.column__img__container}>
