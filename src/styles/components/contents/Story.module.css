@@ -1,0 +1,182 @@
+.story {
+  background-color: var(--mainThemeColor);
+  color: var(--themeColor1);
+  position: relative;
+  width: 100%;
+  padding: 200px calc(150px * var(--sw)) 200px;
+  overflow-x: hidden;
+}
+.story .story__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 80px;
+}
+.story .story__headline .story__headline__title {
+  width: 100%;
+  font-size: var(--fontScaleL6);
+}
+.story .story__headline .story__headline__title::after {
+  content: "";
+  background-color: var(--themeColor1);
+  display: block;
+  position: absolute;
+  top: 47px;
+  left: calc(176px * var(--sw));
+  width: calc(var(--vw) - 180px * var(--sw));
+  height: 1px;
+}
+.story .story__body {
+  position: relative;
+  width: 100%;
+}
+.story .story__body .story__typeface {
+  background-color: var(--subThemeColor);
+  color: var(--themeColor1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  z-index: 1;
+  visibility: hidden;
+}
+.story .story__body .story__typeface .story__typeface__head {
+  position: relative;
+  padding-bottom: 15px;
+}
+.story .story__body .story__typeface .story__typeface__head .story__typeface__name {
+  font-size: 30px;
+  letter-spacing: 0.09em;
+  line-height: 36px;
+  padding-bottom: 15px;
+}
+.story .story__body .story__typeface .story__typeface__head .story__typeface__summary {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  line-height: 24px;
+}
+.story .story__body .story__typeface .story__typeface__head .story__typeface__summary > li::before {
+  content: "/";
+  font-size: inherit;
+  padding-right: 0.5em;
+}
+.story .story__body .story__typeface .story__typeface__description {
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  line-height: 22px;
+}
+.story .story__body .story__typeface .story__typeface__description::before {
+  content: "-";
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+}
+.story .story__body .story__line {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.story .story__body .story__line .story__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 22px;
+  pointer-events: none;
+  cursor: pointer;
+}
+.story .story__body .story__line .story__item .story__item__characters {
+  font-size: var(--fontScaleL6);
+  font-feature-settings: "half" 1;
+  letter-spacing: calc(0.03em * var(--sw));
+  display: flex;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 3px;
+}
+.story .story__body .story__line .story__item .story__item__typeface {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--themeColor3);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 13px;
+  padding-right: 1rem;
+  overflow: hidden;
+}
+.story .story__body .story__line .story__item .story__item__typeface > span:last-child::before {
+  content: "/";
+  font-family: inherit;
+  font-style: italic;
+}
+
+.typing {
+  position: relative;
+}
+
+@media (max-width: 939px) {
+  .story {
+    padding: 120px 30px 102px;
+  }
+  .story .story__headline {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .story .story__headline .story__headline__title {
+    width: 100%;
+    height: 100%;
+    font-size: var(--fontScaleL6);
+  }
+  .story .story__headline .story__headline__title::after {
+    top: 50%;
+    left: 176px;
+    width: var(--vw);
+  }
+  .story .story__body .story__typeface {
+    width: 100%;
+    height: auto;
+    padding: 44px 24px 24px;
+  }
+  .story .story__body .story__typeface .story__typeface__head .story__typeface__name {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 12px;
+  }
+  .story .story__body .story__typeface .story__typeface__head .story__typeface__summary {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .story .story__body .story__typeface .story__typeface__description {
+    letter-spacing: 0.09em;
+    padding-bottom: 15px;
+  }
+  .story .story__body .story__line {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .story .story__body .story__line .story__item {
+    padding-bottom: 16px;
+  }
+  .story .story__body .story__line .story__item .story__item__characters {
+    font-size: 40px;
+    margin-bottom: 4px;
+  }
+  .story .story__body .story__line .story__item .story__item__typeface {
+    font-size: 10px;
+    line-height: 11px;
+    max-height: 22px;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+}
+/*# sourceMappingURL=Story.module.css.map */

@@ -1,0 +1,48 @@
+.concept {
+  background-color: var(--subThemeColor);
+  color: var(--themeColor3);
+  position: relative;
+  width: 100%;
+  padding: 200px calc(150px * var(--sw)) 200px;
+  overflow-x: hidden;
+}
+.concept .concept__headline {
+  display: block;
+  margin-left: -6px;
+  margin-bottom: 80px;
+}
+.concept .concept__headline .concept__headline__title {
+  width: 100%;
+  height: 100%;
+  font-size: var(--fontScaleL6);
+}
+.concept .concept__body__text {
+  font-size: var(--fontScaleL3);
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  padding-bottom: 33px;
+}
+
+@media (max-width: 939px) {
+  .concept {
+    padding: 120px 30px 112px;
+  }
+  .concept .concept__headline {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 32px;
+    display: flex;
+  }
+  .concept .concept__headline .concept__headline__title {
+    width: 100%;
+    height: 100%;
+    font-size: var(--fontScaleL6);
+  }
+  .concept .concept__body__text {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    line-height: 36px;
+  }
+}
+/*# sourceMappingURL=Concept.module.css.map */

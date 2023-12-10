@@ -1,0 +1,92 @@
+.column {
+  background-color: var(--mainThemeColor);
+  color: var(--themeColor1);
+  position: relative;
+  width: 100%;
+  padding: 200px calc( 150px * var( --sw )) 200px;
+  overflow-x: hidden;
+  .column__headline {
+    display: block;
+    position: relative;
+    .column__headline__title {
+      width: 100%;
+      font-size: var(--fontScaleL6);
+      &::before {
+        content: '';
+        background-color: var(--themeColor1);
+        display: block;
+        position: absolute;
+        top: 48px;
+        left: calc( 252px * var( --sw ));
+        width: calc( var( --vw ) - calc( 180px * var( --sw )));
+        height: 1px;    
+      }
+    }
+  }
+  .column__body {
+    .column__title {
+      .column__title__subhead {
+        font-size: var(--fontScaleL2);
+      }
+    }
+    .column__content {
+      margin-top: 60px;
+      .column__content__container {
+        width: 78%;
+        margin-top: 0px;
+        margin: auto;
+        .column__container {
+          margin-bottom: 60px;
+          cursor: pointer;
+          .column__img__container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            max-width: inherit;
+            padding-top: calc(61.141304347826086%);
+            overflow-x: hidden;
+            overflow-y: hidden;
+            box-shadow: rgba(19, 45, 66, 0.1) 22px 28px 40px 8px;
+            border-radius: 2px;
+            .column__img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0px;
+              left: 0px;
+              object-fit: cover;
+              max-width: 100%;            
+            }
+          }
+          .column__container__title {
+            margin-top: 30px;
+            line-height: 10px;
+            font-size: var(--fontScaleL1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 939px) {
+  .column {
+    padding: 120px 30px 102px;
+  }
+  .column__headline {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .column__headline__title::after {
+    top: 50%;
+    left: 250px;
+    width: var(--vw);
+  }
+
+  .column__headline__title {
+    width: 100%;
+    height: 100%;
+    font-size: var(--fontScaleL6);
+  } 
+}

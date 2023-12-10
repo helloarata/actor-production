@@ -3,24 +3,27 @@
   --vh: 100vh;
   --sw: 1;
   --sh: 1;
+
   /* Font Scale */
-  --fontScaleL7: calc(1rem * 8 / 1); /* 8rem       128px */
-  --fontScaleL6: calc(1rem * 8 / 2); /* 4rem       64px  h1*/
-  --fontScaleL5: calc(1rem * 8 / 3); /* 2.67rem    42.7px */
-  --fontScaleL4: calc(1rem * 8 / 4); /* 2rem       32px  h2*/
-  --fontScaleL3: calc(1rem * 8 / 5); /* 1.6rem     25.6px */
-  --fontScaleL2: calc(1rem * 8 / 6); /* 1.33333rem 21.3px */
-  --fontScaleL1: calc(1rem * 8 / 7); /* 1.14286rem 18.3px */
-  --fontScaleM0: calc(1rem * 8 / 5); /* 1rem       16px */
-  --fontScaleS1: calc(1rem * 8 / 9); /* 0.88889rem 14.2px */
+  --fontScaleL7: calc(1rem * 8 / 1);  /* 8rem       128px */
+  --fontScaleL6: calc(1rem * 8 / 2);  /* 4rem       64px  h1*/
+  --fontScaleL5: calc(1rem * 8 / 3);  /* 2.67rem    42.7px */
+  --fontScaleL4: calc(1rem * 8 / 4);  /* 2rem       32px  h2*/
+  --fontScaleL3: calc(1rem * 8 / 5);  /* 1.6rem     25.6px */
+  --fontScaleL2: calc(1rem * 8 / 6);  /* 1.33333rem 21.3px */
+  --fontScaleL1: calc(1rem * 8 / 7);  /* 1.14286rem 18.3px */
+  --fontScaleM0: calc(1rem * 8 / 5);      /* 1rem       16px */
+  --fontScaleS1: calc(1rem * 8 / 9);  /* 0.88889rem 14.2px */
   --fontScaleS2: calc(1rem * 8 / 11); /* 0.8rem     12.8px */
   --fontScaleS3: calc(1rem * 8 / 12); /* 0.73rem    11.6px */
   --fontScaleS4: calc(1rem * 8 / 13); /* 0.67rem    10.66px */
+
   /* Theme Color*/
   --mainThemeColor: #F2F2EF;
   --subThemeColor: #EEF0F2;
   --themeColor1: #2a2927;
   --themeColor3: #1b1b1b;
+
 }
 
 body {
@@ -41,4 +44,3 @@ a {
     min-width: var(--vw);
   }
 }
-/*# sourceMappingURL=globals.css.map */
