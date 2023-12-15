@@ -60,7 +60,7 @@ export default function Cast({ fonts }) {
         <li>
           <dl>
             <dt className={styles.cast__item__role}>仲間になる</dt>
-            <dd className={styles.cast__item__name}><a className={styles.addMember} href='#'><PlusIcon /></a></dd>
+            <dd className={styles.cast__item__name}><a className={styles.addMember} href='#' aria-label="採用サイトへのリンク"><PlusIcon /></a></dd>
           </dl>
         </li>
       </ul>

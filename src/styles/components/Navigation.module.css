@@ -52,7 +52,7 @@
   visibility: hidden;
 }
 .nav__primary__list__item:hover::after {
-  visibility: inherit;
+  visibility: visible;
 }
 .nav__togglebutton {
  display: none;

@@ -5,10 +5,14 @@ export default function Footer({ fonts }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__sharing}>
-        <h5 className={`${styles.footer__sharing__headline} ${fonts[1].className}`}>Information Sharing</h5>
+        <p className={`${styles.footer__sharing__headline} ${fonts[1].className}`}>Information Sharing</p>
         <ul className={styles.footer__sharing__list}>
-          <a href='#'><TwitterIcon /></a>
-          <a href='#'><FacebookIcon /></a>
+          <li>
+            <a href='#' aria-label="Xへのリンク"><TwitterIcon /></a>
+          </li>
+          <li>
+          <a href='#' aria-label="Facebookへのリンク"><FacebookIcon /></a>
+          </li>
         </ul>
       </div>
       <a className={styles.footer__container}>

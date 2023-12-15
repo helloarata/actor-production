@@ -19,7 +19,7 @@ export default function Column({ column, fonts })  {
               <article key={column.id} className={styles.column__container}>
                 <Link href={`/column/${column.id}`}>
                   <div className={styles.column__img__container}>
-                    <img src={`${column.img.url}`} className={styles.column__img}/>
+                    <img src={`${column.img.url}`} className={styles.column__img} alt='つぶらな瞳でこちらを見つめている犬'/>
                   </div>
                   <h2 className={styles.column__container__title}>
                     {column.title}

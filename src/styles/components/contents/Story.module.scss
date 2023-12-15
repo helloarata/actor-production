@@ -92,6 +92,7 @@
           position: relative;
           width: max-content;
           margin-bottom: 3px;
+          
         }
         .story__item__typeface {
           display: -webkit-box;
@@ -106,7 +107,7 @@
           & > span:last-child::before {
             content: '/';
             font-family: inherit;
-            font-style: italic;            
+            font-style: italic;
           }
         }
       }
