@@ -33,13 +33,27 @@
   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .nav__primary__list__item {
+  position: relative;
   cursor: pointer;
   display: block;
   width: max-content;
   height: max-content;
   font-size: var(--fontScaleL1);
 }
-
+.nav__primary__list__item::after {
+  content: "";
+  background-color: var(--themeColor1);
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  visibility: hidden;
+}
+.nav__primary__list__item:hover::after {
+  visibility: inherit;
+}
 .nav__togglebutton {
  display: none;
 }
