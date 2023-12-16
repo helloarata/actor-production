@@ -59,14 +59,14 @@ npm run start
 このプロジェクトでは、next/font を使用して、Google フォントを用いています。
 
 ## 使用技術のマニュアル
- ### Next.jsについてのリソース。
+ ### Next.jsについてのリソース
 [Next.js Documentation](https://nextjs.org/docs) 
 
-### MicroCmSについてのリソース。
+### MicroCmSについてのリソース
 [MicroCmS Documentation](https://document.microcms.io/manual/getting-started)
 
-### Vercelについてのリソース。
-[MicroCmS Documentation](https://vercel.com/docs/deployments/overview)
+### Vercelについてのリソース
+[Vercel Documentation](https://vercel.com/docs/deployments/overview)
 
 ## 今回使用したスキル
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,sass)](https://skillicons.dev)
