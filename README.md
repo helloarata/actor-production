@@ -18,26 +18,57 @@ Next.js + microCMS + Vercel で作られた、架空劇団のブランディン�
 ```
 npm install
 ```
-### ローカル環境での起動
+### ローカル環境での起動コマンド
 ```
 npm run dev
 npm run build
 npm run start
 ```
+## 主なリポジトリ内のフォルダ構造
+```
+│
+├ components
+│　├ contents // 各コンテンツ別に分けたコンポーネントを格納
+│　│  ├ Cast.js    // Castコンテンツのコンポーネント
+│　│  ├ Company.js // Companyコンテンツのコンポーネント
+│　│  ├ Concept.js // Conceptコンテンツのコンポーネント
+│　│  ├ MV.js      // MVコンテンツのコンポーネント
+│　│  └ Story.js   // Storyコンテンツのコンポーネント
+│　├ Footer.js     // Footerコンテンツのコンポーネント
+│　├ Header.js     // Headerコンテンツのコンポーネント
+│　├ Icon.js       // FontAwesomeからIconを取得したコンポーネント
+│　├ Layout.js     // 全てのコンポーネントを包括
+│　└ Navigation.js // navコンテンツのコンポーネント
+│
+├ public
+│　└ thumbnail.png // OGPで使用する画像
+├ src
+│　├ libs
+│　│  └ client.js // microcmsを利用する。API関連の記述
+│　├ pages
+│　│  ├ column
+│　│  │  └ [id].js // Column の詳細記事ページ 
+│　│  ├ column.js // Columnコンテンツのコンポーネント
+│　│  └ index.js  // 全てのコンテンツのコンポーネントを読み込んだTOPページ
+│　└ styles // CSS Modulesを導入。ディレクトリ内は components 内のファイル構造に寄せて各コンポーネント別に分けたcssを配置
+│
 
-ブラウザで [http://localhost:3000](http://localhost:3000) を開くと、結果が表示されます。
+```
 
-このプロジェクトでは、next/font を使用して、自動的に最適化され、カスタムの Google フォントを使用しています。
+## 概要
+このプロジェクトでは、next/font を使用して、Google フォントを用いています。
 
 ## 使用技術のマニュアル
-Next.jsについてのリソース。
+ ### Next.jsについてのリソース。
 [Next.js Documentation](https://nextjs.org/docs) 
-MicroCmSについてのリソース。
+
+### MicroCmSについてのリソース。
 [MicroCmS Documentation](https://document.microcms.io/manual/getting-started)
-Vercelについてのリソース。
+
+### Vercelについてのリソース。
 [MicroCmS Documentation](https://vercel.com/docs/deployments/overview)
 
 ## 今回使用したスキル
-[![My Skills](https://skillicons.dev/icons?i=js,html,sass)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,sass)](https://skillicons.dev)
 
-以上になります。不明な点があればご連絡ください。
+以上になります。ありがとうございます。
