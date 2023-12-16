@@ -79,6 +79,7 @@
   position: relative;
   width: 384px;
   height: 120px;
+  transition: all 0.4s ease-in-out 0s;
 }
 .company__button:hover {
   background-color: var(--themeColor1);

@@ -10,5 +10,5 @@ export function FacebookIcon() {
   return <FontAwesomeIcon icon={faFacebook} size="xl"/>;
 }
 export function PlusIcon() {
-  return <FontAwesomeIcon icon={faPlus} />;
+  return <FontAwesomeIcon icon={faPlus}/>;
 }

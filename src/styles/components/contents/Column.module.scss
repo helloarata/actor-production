@@ -55,7 +55,8 @@
               top: 0px;
               left: 0px;
               object-fit: cover;
-              max-width: 100%;            
+              max-width: 100%;
+              transition: all 0.4s ease-in-out 0s;   
             }
           }
           .column__container__title {
@@ -67,6 +68,10 @@
       }
     }
   }
+}
+
+.column__img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 939px) {

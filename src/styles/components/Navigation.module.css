@@ -106,6 +106,10 @@
     color: var(--themeColor1);
     font-size: var(--fontScaleL3);
   }
+  .nav__primary__list__item:hover::after {
+    content: none;
+    visibility: visible;
+  }
 
   .nav__primary__list__item::after {
     content: '';

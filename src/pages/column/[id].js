@@ -17,7 +17,7 @@ export default function ColumnId({ column }) {
           <h1 className={styles.column__title}>{column.title}</h1>
           <div className={styles.column__publishedat}>
             <ul>
-              <li>{column.publishedAt}</li>
+              <li>{column.publishedAt.substring(0, 10)}</li>
             </ul>
           </div>
           <div className={styles.column__body} dangerouslySetInnerHTML={{

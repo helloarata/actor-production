@@ -100,6 +100,7 @@
       margin: 0 auto;
       margin-top: 128px;
       margin-bottom: 128px;
+      transition: all 0.4s ease-in-out 0s;
 
       .button__container {
         display: flex;
@@ -109,9 +110,19 @@
         
         }
       }
+      &:hover {
+        background-color: var(--themeColor1);
+        color: var(--mainThemeColor);
+        transition-duration: 0.9s;
+        transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);   
+      }
     }
   }
 }
+
+// .button__container:hover {
+//   background-color: var(--themeColor1);
+// } 
 
 @media (max-width: 939px) {
   .column {

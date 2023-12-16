@@ -96,6 +96,7 @@
   margin: 0 auto;
   margin-top: 128px;
   margin-bottom: 128px;
+  transition: all 0.4s ease-in-out 0s;
 }
 .column .column__container .column__button .button__container {
   display: flex;
@@ -104,6 +105,13 @@
   width: -moz-max-content;
   width: max-content;
 }
+.column .column__container .column__button:hover {
+  background-color: var(--themeColor1);
+  color: var(--mainThemeColor);
+  transition-duration: 0.9s;
+  transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+}
+
 @media (max-width: 939px) {
   .column {
     margin: auto;

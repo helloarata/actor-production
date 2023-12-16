@@ -3,7 +3,7 @@
   color: var(--themeColor1);
   position: relative;
   width: 100%;
-  padding: 200px calc(150px * var(--sw)) 200px;
+  padding: 200px calc( 150px * var( --sw )) 200px;
   overflow-x: hidden;
 }
 
@@ -12,30 +12,27 @@
   position: relative;
   margin-bottom: 80px;
 }
-
 .cast__headline__title {
   width: 100%;
   font-size: var(--fontScaleL6);
 }
-
 .cast__headline__title::after {
-  content: "";
-  background-color: var(--themeColor1);
-  display: block;
-  position: absolute;
-  top: 45px;
-  left: calc(145px * var(--sw));
-  width: calc(var(--vw) - 180px * var(--sw));
-  height: 1px;
+    content: '';
+    background-color: var(--themeColor1);
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: calc( 145px * var( --sw ));
+    width: calc( var( --vw ) - calc( 180px * var( --sw )));
+    height: 1px;
 }
+
 
 .cast__list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 240px);
   row-gap: 46px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -64,7 +61,6 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out 0s;
 }
-
 .addMember > svg {
   position: absolute;
   top: 50%;
@@ -86,12 +82,13 @@
   background-color: var(--themeColor1);
   transition-duration: 0.9s;
   transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+  & svg {
+    color: var(--mainThemeColor);
+    transition-duration: 0.9s;
+    transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+  }
 }
-.addMember:hover svg {
-  color: var(--mainThemeColor);
-  transition-duration: 0.9s;
-  transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
-}
+
 
 @media (max-width: 939px) {
   .cast {
@@ -108,6 +105,7 @@
     left: 140px;
     width: var(--vw);
   }
+
   .cast__headline__title {
     width: 100%;
     height: 100%;
@@ -118,13 +116,14 @@
     row-gap: 27px;
     width: 100%;
   }
+
   .cast__item__role {
     line-height: 12px;
     padding-bottom: 3px;
   }
+
   .cast__item__name {
     font-size: 15px;
     line-height: 18px;
   }
 }
-/*# sourceMappingURL=Cast.module.css.map */
